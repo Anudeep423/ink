@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Mulish Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mulish Regular"), url("../fonts/Mulish-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Mulish Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mulish Italic"), url("../fonts/Mulish-Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Mulish ExtraLight";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mulish ExtraLight"), url("../fonts/Mulish-ExtraLight.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Mulish ExtraLight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mulish ExtraLight Italic'), url('../fonts/Mulish-ExtraLightItalic.woff') format('woff');
+    }
+
+@font-face {
+    font-family: "Mulish Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mulish Light"), url("../fonts/Mulish-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Mulish SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mulish SemiBold"), url("../fonts/Mulish-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Mulish Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mulish Bold"), url("../fonts/Mulish-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Mulish Bold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mulish Bold Italic"), url("../fonts/Mulish-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Mulish ExtraBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mulish ExtraBold"), url("../fonts/Mulish-ExtraBold.woff") format("woff");
+}
+
+$regular: "Mulish Regular";
+$italic: "Mulish Italic";
+$extraLightItalic: "Mulish ExtraLight Italic";
+$extraLight: "Mulish ExtraLight";
+$light: "Mulish Light";
+$semiBold: "Mulish SemiBold";
+$bold: "Mulish Bold";
+$boldItalic: "Mulish Bold Italic";
+$extraBold: "Mulish ExtraBold";

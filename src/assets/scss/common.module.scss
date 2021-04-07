@@ -1,0 +1,168 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+
+:export {
+  // Define Colors
+  appColor: $appColor;
+  pink1: $pink-1;
+  pink2: $pink-2;
+  pink3: $pink-3;
+  purple1: $purple-1;
+  purple2: $purple-2;
+  white1: $white-1;
+  white2: $white-2;
+  white3: $white-3;
+  white4: $white-4;
+  white5: $white-5;
+  grey1: $grey-1;
+  grey2: $grey-2;
+  grey3: $grey-3;
+  grey4: $grey-4;
+  grey5: $grey-5;
+  grey6: $grey-6;
+  grey7: $grey-7;
+  grey8: $grey-8;
+  grey9: $grey-9;
+  grey10: $grey-10;
+  black: $black;
+  black1: $black-1;
+  black2: $black-2;
+  yellow1: $yellow-1;
+  blue1: $blue-1;
+  blue2: $blue-2;
+  green1: $green-1;
+
+  // Define Fonts
+  regular: $regular;
+  italic: $italic;
+  extraLightItalic: $extraLightItalic;
+  extraLight: $extraLight;
+  light: $light;
+  semiBold: $semiBold;
+  bold: $bold;
+  boldItalic: $boldItalic;
+  extraBold: $extraBold;
+}
+
+.regular {
+  font-family: $regular;
+}
+.italic {
+  font-family: $italic;
+}
+.extra-light-italic {
+  font-family: $extraLightItalic;
+}
+.extra-light {
+  font-family: $extraLight;
+}
+.light {
+  font-family: $light;
+}
+.semi-bold {
+  font-family: $semiBold;
+}
+.bold {
+  font-family: $bold;
+}
+.bold-italic {
+  font-family: $boldItalic;
+}
+.extra-bold {
+  font-family: $extraBold;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.ai-center {
+  align-items: center;
+}
+.center-flex {
+  @extend .d-flex;
+  @extend .ai-center;
+  justify-content: center;
+}
+
+.between-flex {
+  @extend .d-flex;
+  @extend .ai-center;
+  justify-content: space-between;
+}
+
+.evenly-flex {
+  @extend .d-flex;
+  @extend .ai-center;
+  justify-content: space-evenly;
+}
+
+.around-flex {
+  @extend .d-flex;
+  @extend .ai-center;
+  justify-content: space-around;
+}
+
+$spaceamounts: (
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  75,
+  100
+); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}px !important;
+  }
+  .p-#{$space} {
+    padding: #{$space}px !important;
+  }
+}
+
+body.modal-open {
+  overflow: hidden !important;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
